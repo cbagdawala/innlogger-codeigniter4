@@ -1,0 +1,35 @@
+{
+    "name": "cbagdawala/innlogger-codeigniter4",
+    "description": "InnLogger SDK for CodeIgniter 4: signed, fail-silent application logging to an InnLogger portal.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["codeigniter4", "logging", "innlogger", "monitoring", "hmac"],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "codeigniter4/framework": "^4.4",
+        "phpunit/phpunit": "^10.5 || ^11.0"
+    },
+    "suggest": {
+        "codeigniter4/framework": "^4.4 is required for the Services, Config, spark command, log handler and exception handler integration"
+    },
+    "autoload": {
+        "psr-4": {
+            "InnLogger\\CodeIgniter4\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "InnLogger\\CodeIgniter4\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
