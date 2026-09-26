@@ -1,0 +1,8 @@
+# Keep Composer installs lean: dev-only files are left out of release archives.
+/tests            export-ignore
+/phpunit.xml      export-ignore
+/.gitattributes   export-ignore
+/.gitignore       export-ignore
+/.github          export-ignore
+
+* text=auto eol=lf
