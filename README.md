@@ -14,28 +14,9 @@ InnLogger side never becomes an error in your application.
 
 ## Install
 
-The package is published to the private repository `github.com/cbagdawala/innlogger-codeigniter4`.
-The server that runs Composer needs read access to it. The simplest way is a GitHub token with
-**Contents: read-only** on the SDK repositories, set once per server:
-
 ```bash
-composer config --global --auth github-oauth.github.com <read-only-token>
+composer require cbagdawala/innlogger-codeigniter4
 ```
-
-Add the repository to your application's `composer.json`, then require the package:
-
-```json
-"repositories": [
-    { "type": "vcs", "url": "https://github.com/cbagdawala/innlogger-codeigniter4" }
-]
-```
-
-```bash
-composer require cbagdawala/innlogger-codeigniter4:^1.0
-```
-
-With an SSH key that can read the repository instead of a token, use
-`{ "type": "vcs", "url": "git@github.com:cbagdawala/innlogger-codeigniter4.git", "no-api": true }`.
 
 Composer package auto-discovery registers the service and the spark commands. It is on by
 default through `Config\Modules::$discoverInComposer`, so you don't need to register anything.
@@ -303,7 +284,7 @@ CodeIgniter app's tests, `Services::injectMock('innlogger', $client)` replaces t
 
 ## Development
 
-> This package is developed in the InnLogger repository (`inn-logger-prime-2026`, under `packages/`) and published here automatically. Make changes there, not in the published repository; see `docs/operations/sdk-releases.md` in that repository.
+> This repository is a read-only mirror, published automatically from the private InnLogger repository. Pull requests here would be overwritten; please open an issue instead.
 
 Tests use PHPUnit 11 and a fake transport. They also include real HTTP against PHP's built-in
 server to check timeouts.

@@ -2,6 +2,10 @@
 
 All notable changes to `cbagdawala/innlogger-codeigniter4` are listed here. Versions follow [semantic versioning](https://semver.org).
 
+## 1.0.1 (2026-09-27)
+
+- Released under the MIT licence and published on Packagist: install with a plain `composer require`, no repository entry or token needed.
+
 ## 1.0.0 (2026-09-26)
 
 First release.

@@ -2,7 +2,7 @@
     "name": "cbagdawala/innlogger-codeigniter4",
     "description": "InnLogger SDK for CodeIgniter 4: signed, fail-silent application logging to an InnLogger portal.",
     "type": "library",
-    "license": "proprietary",
+    "license": "MIT",
     "keywords": ["codeigniter4", "logging", "innlogger", "monitoring", "hmac"],
     "authors": [
         {
